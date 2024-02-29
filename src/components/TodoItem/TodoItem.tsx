@@ -65,12 +65,14 @@ const TodoItem = ({ todo }: { todo: Todo }) => {
                         setContent={setConent}
                     ></ResponsiveTextArea>
                 </span>
+                <span>
                 <button ref={uncheckedBtnRef} onClick={handleToggleCompleted}>
                     <i className="bi bi-check-square"></i>
                 </button>
                 <button ref={checkedBtnRef} onClick={handleToggleCompleted}>
                     <i className="bi bi-check-square-fill"></i>
                 </button>
+                
                 <button
                     className="deleteBtn"
                     onClick={() => {
@@ -79,6 +81,7 @@ const TodoItem = ({ todo }: { todo: Todo }) => {
                 >
                     <i className="bi bi-trash-fill"></i>
                 </button>
+                </span>
                 </div>
                 <ErrorMessage isError={isError}></ErrorMessage>
             </li>

@@ -27,7 +27,6 @@
 .deleteBtn:hover{
     color: #e63946;
 }
-
 @media (width>=1024px){
     .textcontainer{
         width: 85%;
