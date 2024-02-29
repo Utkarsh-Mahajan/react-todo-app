@@ -65,7 +65,7 @@ const TodoItem = ({ todo }: { todo: Todo }) => {
                         setContent={setConent}
                     ></ResponsiveTextArea>
                 </span>
-                <span>
+                <span className = "btncontainer">
                 <button ref={uncheckedBtnRef} onClick={handleToggleCompleted}>
                     <i className="bi bi-check-square"></i>
                 </button>
