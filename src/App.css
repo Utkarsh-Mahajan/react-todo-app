@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "NavBar NavBar NavBar"
+    "AddTodo AddTodo AddTodo"
+    "t1 TodoList t2"
+    "Footer Footer Footer"
+    ;
+
+  font-size: var(--font-size);
+}
+

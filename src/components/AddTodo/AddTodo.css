@@ -1,0 +1,32 @@
+.addtodo{
+    grid-area: AddTodo;
+    margin: calc(var(--basic-margin)*2) 0px;
+    padding: var(--basic-padding);
+}
+
+.addform{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+.addform button{
+    align-self: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 1em;
+    font-family: "Anta", sans-serif;
+    background-color: #EDF2F4;
+    color: #2B2D42
+}
+.addform button:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer ;
+}
+
+@media (width>=768px){
+    .addform{
+        width: 70%;
+        margin: 0px auto;
+    }
+}

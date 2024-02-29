@@ -1,0 +1,15 @@
+.footer{
+    grid-area: Footer;
+    position: fixed;
+    bottom: 0;
+    background-color: #e63946;
+    font-size: 1em;
+    margin: 3px;
+    margin-bottom: 0;
+    width: 100%;
+    font-weight: 100;
+    color: #edf2f4;
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}

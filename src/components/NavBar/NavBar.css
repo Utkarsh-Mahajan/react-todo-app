@@ -1,0 +1,19 @@
+
+
+.navbar{
+    grid-area: NavBar;
+    background-color: #e63946;
+    font-size: 1.2em;
+    padding: calc(var(--basic-padding)*2);
+    margin: 3px;
+    color: #edf2f4;
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+@media (width>=1024px) and (width<=1440px){
+    .navbar{
+        font-size: 1em;
+    }
+}

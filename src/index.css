@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Antonio:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Antonio:wght@100&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-size: 1rem;
+  --basic-padding: 10px;
+  --basic-margin:10px;
+}
+
+@media (width>=1024px) and (width<=1440px) {
+    :root{
+        /* --font-size:0.8rem; */
+        --basic-padding:5px;
+        --basic-margin:1px;
+    }
+    
+}
