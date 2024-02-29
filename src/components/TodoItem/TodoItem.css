@@ -1,43 +1,52 @@
-.todoitem{
-    border: 1px solid #8D99AE;
-    border-radius: 10px;
-    padding: calc(var(--basic-padding) + 5px);
-    background-color: #EDF2F4;
-   
+.todoitem {
+  border: 1px solid #8d99ae;
+  border-radius: 10px;
+  background-color: #edf2f4;
 }
-.btncontainer{
-    display: flex;
-    column-gap:5px ;
+.textcontainer{
+    width: 100%;
 }
-.todocontainer{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    justify-content: center;
-    flex-wrap: wrap;
+.btncontainer {
+  display: flex;
+  column-gap: 5px;
 }
-.todoitem:hover{
-    background-color: #d8e2dc;
+.todocontainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.todoitem:hover {
+  background-color: #d8e2dc;
 }
 
-.todoitem button{
-    border: none;
-    font-size: 1.3em;
-    background-color: inherit;
+.todoitem button {
+  border: none;
+  font-size: 1.3em;
+  background-color: inherit;
 }
-.todoitem button:hover{
-    cursor: pointer;
+.todoitem button:hover {
+  cursor: pointer;
 }
-.deleteBtn:hover{
-    color: #e63946;
+.deleteBtn:hover {
+  color: #e63946;
 }
-@media (width>=1024px){
-    .textcontainer{
-        width: 85%;
-    }
+@media (width>=1024px) {
+  .textcontainer {
+    width: 85%;
+  }
 }
-@media (width>=1440px){
-    .textcontainer{
-        width: 88%;
-    }
+@media (width>=1440px) {
+  .textcontainer {
+    width: 88%;
+  }
+}
+@media (width>=375px) {
+  .todoitem {
+    padding: calc(var(--basic-padding) + 5px);
+  }
+  .textcontainer{
+    width: auto;
+  }
 }
