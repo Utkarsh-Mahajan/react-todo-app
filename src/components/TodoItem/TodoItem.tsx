@@ -13,7 +13,7 @@ import validateForm from "../../functions/validateForm";
 const TodoItem = ({ todo }: { todo: Todo }) => {
     const dispatch = useDispatch();
     const [content, setConent] = useState(todo.content);
-    const textInputRef = useRef<HTMLTextAreaElement>(null);
+    const textInputRef = useRef<HTMLDivElement>(null);
     const uncheckedBtnRef = useRef<HTMLButtonElement>(null);
     const checkedBtnRef = useRef<HTMLButtonElement>(null);
     const [isError, setIsError] = useState(false);
@@ -54,7 +54,7 @@ const TodoItem = ({ todo }: { todo: Todo }) => {
         <>
             <li className="todoitem">
             <div className="todocontainer">
-                <span
+                <div
                     className="textcontainer"
                     onBlur={handleEditTodo}
                     ref={textInputRef}
@@ -64,7 +64,7 @@ const TodoItem = ({ todo }: { todo: Todo }) => {
                         content={content}
                         setContent={setConent}
                     ></ResponsiveTextArea>
-                </span>
+                </div>
                 <span className = "btncontainer">
                 <button ref={uncheckedBtnRef} onClick={handleToggleCompleted}>
                     <i className="bi bi-check-square"></i>

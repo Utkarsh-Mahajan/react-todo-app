@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .todoitem:hover {
@@ -34,12 +34,12 @@
 }
 @media (width>=1024px) {
   .textcontainer {
-    width: 85%;
+    min-width: 80%;
   }
 }
 @media (width>=1440px) {
   .textcontainer {
-    width: 88%;
+    min-width: 88%;
   }
 }
 @media (width>=375px) {

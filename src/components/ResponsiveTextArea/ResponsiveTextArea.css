@@ -13,7 +13,7 @@
     outline: none;
 }
 
-@media (width>=1024px) and (width<=1440px){
+@media (1440px>= width>=1024px) and (width){
     .textarea{
         font-size: 0.9em;
     }
